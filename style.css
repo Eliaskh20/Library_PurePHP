@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif';
+ 
+   
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding-bottom: 20px;
+    
+    
+}
+h2{
+
+    background-color: rgb(26, 4, 77);
+    border-top:  1px  solid rgb(26, 4, 77);
+    width: max-content;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px;
+    margin-top: -35px;
+    margin-left:0px;
+
+}
+h4{
+    font-size: 15px;
+    font-family:cursive;
+    text-align: left;
+}
+
+
+
+.header{
+    min-height: 100vh;
+
+    background: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position:  relative;
+
+    
+}
+
+.hero-btn{
+    font-family: cursive;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid rgb(26, 4, 77);
+    background-color: white;
+    color: rgb(26, 4, 77);
+    padding: 5px 2px; 
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
+
+
+
+.hero-btn:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: rgba(26, 4, 77);
+    color: white;
+    transition: 1s;
+    cursor: progress;
+}
+.body{
+    background-color: rgb(26, 4, 77);
+    margin-top: 10%;
+}
+
+
+
+
+
+
+/*------Register------*/
+
+.box {
+
+    width: 350px;
+    height: 300px;
+    border: 7px  ridge rgba(255, 255, 255, 1);
+    padding: 10px 10px;
+    background: rgb(26, 4, 77);
+    
+}
+.in-box{
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+font-family: 'Times New Roman', Times, serif;
+ruby-align: right;
+}
+
+
+.in-box input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+
+    background-color: white;
+
+
+    
+}
+
+.log-btn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: rgb(26, 4, 77);
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 5px;
+    border: 2px;
+    display: inline-block;
+    position: relative;
+
+}
+.log-btn:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: rgba(26, 4, 77);
+    color: white;
+    transition: 1s;
+    cursor: progress;
+}
+
+
+
+
+
+
+
+
+/*------Login------*/
+
+.boxL {
+    color: white;
+    width: 350px;
+    height: 250px;
+    border: 7px  ridge rgba(255, 255, 255, 1);
+    padding: 10px 10px;
+    background: rgb(26, 4, 77);
+    
+    
+}
+.in-box{
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.in-box input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+
+    background-color: white;
+
+
+    
+}
+
+
+.log-btn input{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: rgb(26, 4, 77);
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 5px;
+    border: 2px;
+    display: inline-block;
+    position: relative;
+
+}
+.log-btn:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: rgba(26, 4, 77);
+    color: white;
+    transition: 1s;
+    cursor: progress;
+}
+
+.Sw{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+    
+    
+  }
+
+ h7{
+    margin-left: 10px;
+}
+  /* The slider */
+  .slider {
+    position:absolute ;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(26, 4, 77);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 2px solid white;
+    
+    
+    
+  }
+  
+  .slider:before {
+    
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 26px;
+    left: 4px;
+    bottom: 2px;
+    background-color: rgb(221, 163, 17);
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+   
+  }
+  
+  
+  input:checked + .slider {
+    
+    background-color:white;
+    
+    
+
+  }
+  
+  input:focus + .slider {
+    
+    border: 2px solid white;
+    color: green;
+    
+    
+  }
+  
+  input:checked + .slider:before {
+    
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(16px);
+    
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    
+    
+    
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    
+  }
+
+
+
+  
+
+/*************************************  Show M  **************************/
+
+
+
+.boxSM {
+    
+    color: white;
+    width: 800px;
+    height: auto;
+    border: 7px double rgba(255, 255, 255, 0.601);
+    padding: 10px 10px;
+    background: rgb(26, 4, 77);
+    margin: 15px;
+    margin-top: 20px;
+    
+    
+}
+.bbtn{
+
+    width:max-content;
+    margin-left: auto;
+    margin-top: -50px;
+    display: flex;
+    
+    
+}
+.sh-btn{
+    font-family: cursive;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid rgb(26, 4, 77);
+    background-color: white;
+    color: rgb(26, 4, 77);
+    padding: 5px 2px; 
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+
+
+
+
+.sh-btn:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: rgba(26, 4, 77);
+    color: white;
+    transition: 1s;
+    cursor: progress;
+}
+
+@keyframes mymove {
+    from { -webkit-text-stroke: 2px rgba(255, 255, 255, 0.105);}
+    to { -webkit-text-stroke: 2px rgb(255, 255, 255);}
+ 
+
+  }
+
+
+
+p.up{
+    animation: mymove  3s   ;
+
+    font-size: 62px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+    margin-top: -70px;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    transition: width 2s;
+    
+    -webkit-text-fill-color:rgba(26, 4, 77);
+    margin-bottom: 50px;
+
+     
+}
+
+
+.show{
+    display: flex;
+    align-items: center;
+}
+.Mian{
+    
+    color: rgb(132, 255, 0);
+    margin-left: 10px;
+    font-size: 18px;
+  
+}
+.NMian{
+    font-size: 16px;
+}
+
+
+
+/************************** Add Book ******************************/
+
+.boxA {
+    color: white;
+    width: 350px;
+    height: 350px;
+    border: 7px  ridge rgba(255, 255, 255, 1);
+    padding: 10px 10px;
+    background: rgb(26, 4, 77);
+    
+    
+}
+.in-box{
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.in-box input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+
+    background-color: white;
+
+
+    
+}
+
+    
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Select  files';
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 12px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: white;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+
+  .in-boxA{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    
+    }
+    
+    
+    .in-boxA input{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 200px;
+        padding: 10px;
+        margin-top: 15px;
+        font-size: 15px;
+    
+        background-color: white;
+    
+    
+        
+    }
+
+
+    select {
+        margin-left: 20px;
+        text-align: center;
+        width: 20%;
+        height: 30px;
+        font-size: 15px;
+
+        cursor: pointer;
+        background-color: rgb(26, 4, 77);
+        border: none;
+        border: 2px solid white;
+        color: white;
+
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 0px;
+      }
+      /* For IE <= 11 */
+      select::-ms-expand {
+        display: none; 
+      }
+
+
+
+
+      /******************************  Show Post ******************************/
+     
+      /* Style the links inside the navigation bar */
+   
+      
+      .up .Search{
+        display:flow-root ;
+        float: center;
+        font-family: 'Courier New', Courier, monospace;
+        height: 25px;
+        border: 2px solid white;
+        background-color: rgb(26, 4, 77);
+        font-size: 17px;
+
+        margin-right: -600px;
+      }
+
+.boxADe {
+    
+    color: white;
+    width: 1000px;
+    height: auto;
+    border: 5px  solid  rgba(255, 255, 255, 0.601);
+    padding: 10px 10px;
+    background: rgb(26, 4, 77);
+    margin: 15px;
+    margin-top: 16px;
+
+    
+}
+.boxADe  .sh-btn{
+    margin-top: 20px ;
+}
+
+.boxADe .show .Mian{
+    color: orange;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+.boxADe .show .NMian{
+    margin-left: 5px;
+    margin-right: 10px;
+    justify-items: center;
+    margin-top: 5px;
+}
+      
+     
